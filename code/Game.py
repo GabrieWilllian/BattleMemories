@@ -1,5 +1,6 @@
 import pygame
 
+from code.Const import WIN_WIDTH, WIN_HEIGHT
 from code.Menu import Menu
 
 class Game:
@@ -9,7 +10,7 @@ class Game:
         # Criando a janela onde o jogo vai roda/aparecer.
         # window - é uma variável que vai receber a tela.
         # O tamanho da tela é uma tupla
-        self.window = pygame.display.set_mode((1280, 720))
+        self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
 
 
     def run(self):
@@ -19,9 +20,3 @@ class Game:
 
 
 
-            ##verifica todos os eventos.
-            #for event in pygame.event.get():
-                ##Se o evento for do tipo pygame.QUIT
-                #if event.type == pygame.QUIT:
-                  #  pygame.quit() # Fecha a janela
-                    #quit() # Encerra o pygame
